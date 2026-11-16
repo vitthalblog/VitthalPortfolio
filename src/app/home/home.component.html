@@ -1,0 +1,222 @@
+
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Left: Introduction -->
+      <div class="col-lg-6">
+        <span class="availability-badge">
+          <span class="availability-dot"></span>
+          AVAILABLE FOR NEW OPPORTUNITIES
+        </span>
+
+        <p class="hello mt-4">Hello! 👋 I'm</p>
+
+        <h1 > <span> JADHAV VITTHAL</span></h1>
+
+        <h2 class="hero-role">
+          
+          <span>Front-End Developer | Angular Developer</span>
+        </h2>
+
+        <p class="hero-copy">
+          I develop responsive, scalable and user-friendly web applications
+          using Angular, TypeScript, JavaScript and modern frontend technologies.
+          I enjoy building reusable components and delivering clean user experiences.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <button type="button" class="btn btn-primary-custom"
+                  (click)="projects()">
+            View My Projects <i class="bi bi-arrow-up-right"></i>
+          </button>
+
+          <button type="button" class="btn btn-outline-custom"
+                  (click)="contact()">
+            Hire Me <i class="bi bi-send"></i>
+          </button>
+        </div>
+
+        <div class="hero-contact mt-4">
+          <a href="mailto:jadhavvitthal69@gmail.com">
+            <i class="bi bi-envelope"></i>
+            jadhavvitthal69&#64;gmail.com
+          </a>
+
+          <a href="tel:+917507457875">
+            <i class="bi bi-telephone"></i>
+            +91 7507457875
+          </a>
+
+          <span><i class="bi bi-geo-alt"></i> Pune, Maharashtra</span>
+        </div>
+
+        <div class="hero-social mt-4">
+          <span>Connect with me:</span>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+             aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener"
+             aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Right: Bootstrap Carousel -->
+      <div class="col-lg-6">
+        <div id="developerCarousel"
+             class="carousel slide developer-carousel"
+             data-bs-ride="carousel"
+             data-bs-interval="4000">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#developerCarousel"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#developerCarousel"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#developerCarousel"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-card">
+                <div class="carousel-top">
+                  <span><i class="bi bi-code-slash"></i> MY EXPERTISE</span>
+                  <span class="slide-number">01 / 03</span>
+                </div>
+
+                <div class="slide-icon">
+                  <i class="bi bi-window-stack"></i>
+                </div>
+
+                <h3>Angular Development</h3>
+                <p>
+                  Building modern single-page applications with reusable
+                  components, routing, forms and maintainable architecture.
+                </p>
+
+                <div class="tech-list">
+                  <span>Angular</span>
+                  <span>TypeScript</span>
+                  <span>RxJS</span>
+                </div>
+
+                <div class="slide-footer">
+                  <span>Frontend Engineering</span>
+                  <i class="bi bi-arrow-up-right-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <div class="carousel-top">
+                  <span><i class="bi bi-cloud-check"></i> MY EXPERTISE</span>
+                  <span class="slide-number">02 / 03</span>
+                </div>
+
+                <div class="slide-icon">
+                  <i class="bi bi-database-check"></i>
+                </div>
+
+                <h3>API & Firebase Integration</h3>
+                <p>
+                  Connecting applications with REST APIs and Firebase
+                  to build data-driven features and interactive experiences.
+                </p>
+
+                <div class="tech-list">
+                  <span>REST API</span>
+                  <span>Firebase</span>
+                  <span>JSON</span>
+                </div>
+
+                <div class="slide-footer">
+                  <span>Backend Integration</span>
+                  <i class="bi bi-arrow-up-right-circle"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <div class="carousel-top">
+                  <span><i class="bi bi-display"></i> MY EXPERTISE</span>
+                  <span class="slide-number">03 / 03</span>
+                </div>
+
+                <div class="slide-icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+
+                <h3>Responsive UI Development</h3>
+                <p>
+                  Creating clean, accessible and mobile-friendly interfaces
+                  that provide a consistent experience across devices.
+                </p>
+
+                <div class="tech-list">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Bootstrap</span>
+                </div>
+
+                <div class="slide-footer">
+                  <span>UI & UX Development</span>
+                  <i class="bi bi-arrow-up-right-circle"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#developerCarousel" data-bs-slide="prev"
+                  aria-label="Previous slide">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#developerCarousel" data-bs-slide="next"
+                  aria-label="Next slide">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Technical Skills -->
+<section id="skills" class="section-padding skills-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span>WHAT I WORK WITH</span>
+      <h2>TECHNICAL SKILLS</h2>
+      <p>
+        Technologies and tools I use to build modern web applications.
+      </p>
+      <div></div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-6 col-md-4 col-lg-3" *ngFor="let skill of skills">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+          <h5>{{ skill.name }}</h5>
+          <span>{{ skill.category }}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

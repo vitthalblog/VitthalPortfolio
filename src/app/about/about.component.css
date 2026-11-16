@@ -1,0 +1,169 @@
+/* SECTION SPACING */
+.section-padding {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    font-size: .75rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #ff6b00;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 850;
+    margin: 8px 0;
+    color: #252525;
+}
+
+.section-title div {
+    width: 75px;
+    height: 3px;
+    background: #ff6b00;
+    margin: 17px auto;
+}
+
+/* ABOUT ILLUSTRATION */
+.about-art {
+    height: 350px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.about-orbit {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background: #fff0df;
+    box-shadow: 0 15px 45px rgba(255, 107, 0, .08);
+}
+
+.about-symbol {
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #ff9b50, #ff6b00);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 7rem;
+    transform: rotate(-7deg);
+    box-shadow: 0 25px 50px rgba(255, 107, 0, .25);
+}
+
+/* EXPERIENCE BADGE */
+.experience-pill {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    background: #252525;
+    padding: 12px 18px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+    color: #ffcc00;
+    font-weight: 800;
+}
+
+/* ABOUT TEXT */
+h3 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #252525;
+}
+
+p {
+    color: #666666;
+    line-height: 1.8;
+}
+
+/* PERSONAL INFORMATION */
+.about-fact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff7ed;
+    padding: 13px;
+    border: 1px solid #ffe3c7;
+    border-radius: 12px;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.about-fact:hover {
+    transform: translateY(-4px);
+    background: #ffedd8;
+    box-shadow: 0 8px 20px rgba(255, 107, 0, .10);
+}
+
+.about-fact i {
+    font-size: 1.5rem;
+    color: #ff6b00;
+}
+
+.about-fact b {
+    display: block;
+    color: #252525;
+}
+
+.about-fact span {
+    font-size: .85rem;
+    color: #666666;
+}
+
+/* DOWNLOAD CV BUTTON */
+.btn-teal {
+    background: #ff6b00;
+    color: white;
+    border-color: #ff6b00;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.btn-teal:hover {
+    background: #252525;
+    border-color: #252525;
+    color: #ffcc00;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 575px) {
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .about-art {
+        height: 300px;
+    }
+
+    .about-orbit {
+        width: 240px;
+        height: 240px;
+    }
+
+    .about-symbol {
+        width: 170px;
+        height: 170px;
+        font-size: 5.5rem;
+    }
+
+    .experience-pill {
+        right: 5px;
+        bottom: 10px;
+        font-size: .85rem;
+    }
+}

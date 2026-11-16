@@ -1,0 +1,81 @@
+.portfolio-nav {
+    background: linear-gradient(100deg, #ff6b00, #252525);
+    padding: 14px 0;
+    box-shadow: 0 5px 25px rgba(255, 107, 0, 0.20);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    letter-spacing: 1.5px;
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    color: #ff6b00;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-weight: 900;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    position: relative;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #ffffff !important;
+    letter-spacing: 0.7px;
+    padding: 10px 12px !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: 3px;
+    width: 0;
+    height: 3px;
+    background: #ffcc00;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.nav-link:hover::after {
+    width: calc(100% - 24px);
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: #252525;
+        margin-top: 14px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .nav-link {
+        padding: 12px !important;
+    }
+}

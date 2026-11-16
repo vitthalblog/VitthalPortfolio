@@ -1,0 +1,7 @@
+<section id="experience" class="section-padding"><div class="container">
+  <div class="section-title"><span>MY CAREER</span><h2>PROFESSIONAL EXPERIENCE</h2><div></div></div>
+  <div class="timeline"><article class="timeline-item" *ngFor="let job of jobs"><div class="timeline-dot"></div><div class="timeline-card">
+    <span class="period">{{job.period}}</span><h3>{{job.role}}</h3><h4>{{job.company}}</h4>
+    <ul><li *ngFor="let detail of job.details">{{detail}}</li></ul>
+  </div></article></div>
+</div></section>

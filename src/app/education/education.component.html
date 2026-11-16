@@ -1,0 +1,19 @@
+<section id="education" class="section-padding">
+    <div class="container">
+        <div class="section-title"><span>MY ACADEMIC BACKGROUND</span>
+            <h2>EDUCATION</h2>
+            <div></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6" *ngFor="let item of education">
+                <div class="education-card h-100">
+                    <div class="edu-icon"><i class="bi bi-mortarboard"></i></div>
+                    <div><span class="edu-year">{{item.year}}</span>
+                        <h3>{{item.degree}}</h3>
+                        <p>{{item.institute}}</p><b>{{item.score}}</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

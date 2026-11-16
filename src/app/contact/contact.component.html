@@ -1,0 +1,102 @@
+<section id="contact" class="section-padding contact-section">
+    <div class="container">
+        <div class="section-title"><span>GET IN TOUCH</span>
+            <h2>CONTACT ME</h2>
+            <div></div>
+            <p>Let's discuss your next project or career opportunity.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4">
+                <div class="contact-info"><a href="mailto:jadhavvitthal69gmail.com"><i
+                            class="bi bi-envelope"></i><span><b>Email</b>jadhavvitthal69&#64;gmail.com</span></a><a
+                        href="tel:+917507457875"><i class="bi bi-telephone"></i><span><b>Mobile</b>+91
+                            7507457875</span></a>
+                    <div><i class="bi bi-geo-alt"></i><span><b>Location</b>Suman Sankalp, Ambegaon Budruk, Pune, Maharashtra 411046</span></div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+              
+<form class="contact-card" novalidate>
+
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <label class="form-label">
+                Your Name <span class="required-star">*</span>
+            </label>
+            <input class="form-control" type="text" id="name"
+                   name="name" ngModel required minlength="2"
+                   placeholder="Enter your name">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">
+                Email Address <span class="required-star">*</span>
+            </label>
+            <input class="form-control" type="email" id="email"
+                   name="email" ngModel required email
+                   placeholder="Email">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">
+                Mobile <span class="required-star">*</span>
+            </label>
+            <input class="form-control" type="text" id="mobile"
+                   name="mobile" ngModel required
+                   placeholder="Mobile">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">
+                Subject <span class="required-star">*</span>
+            </label>
+            <input class="form-control" type="text" id="subject"
+                   name="subject" ngModel required
+                   placeholder="Subject">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">
+                Message <span class="required-star">*</span>
+            </label>
+            <textarea class="form-control" id="message"
+                      name="message" rows="3" ngModel
+                      required minlength="10"
+                      placeholder="Write your message..."></textarea>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-teal rounded-pill px-4"
+                    type="button"
+                    (click)="sendDetails()">
+                {{sending ? 'Sending...' : 'Send Message'}}
+                <i class="bi bi-send ms-2"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Success Message -->
+    <div class="custom-alert success-alert" *ngIf="successMessage">
+        <i class="bi bi-check-circle-fill"></i>
+        <div>
+            <strong>Message Sent Successfully!</strong>
+            <p>{{successMessage}}</p>
+        </div>
+    </div>
+
+    <!-- Error Message -->
+    <div class="custom-alert error-alert" *ngIf="errorMessage">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <div>
+            <strong>Unable to Submit!</strong>
+            <p>{{errorMessage}}</p>
+        </div>
+    </div>
+
+</form>
+            </div>
+        </div>
+    </div>
+</section>

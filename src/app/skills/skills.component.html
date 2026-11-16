@@ -1,0 +1,47 @@
+
+<section id="skills" class="section-padding skills-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span>WHAT I WORK WITH</span>
+      <h2>TECHNICAL SKILLS</h2>
+      <p>
+        Technologies and tools I use to build modern web applications.
+      </p>
+      <div></div>
+    </div>
+
+    <div class="skills-carousel">
+      <div class="skills-track">
+
+        <!-- First set -->
+        <div class="skill-card" *ngFor="let skill of skills">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+
+          <h5>{{ skill.name }}</h5>
+          <span>{{ skill.category }}</span>
+        </div>
+
+        <!-- Duplicate set for seamless scrolling -->
+        <div class="skill-card" *ngFor="let skill of skills"
+             aria-hidden="true">
+          <div class="skill-icon">
+            <i [class]="skill.icon"></i>
+          </div>
+
+          <h5>{{ skill.name }}</h5>
+          <span>{{ skill.category }}</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="skills-caption">
+      <i class="bi bi-stars"></i>
+      Always learning. Always building.
+    </div>
+
+  </div>
+</section>
